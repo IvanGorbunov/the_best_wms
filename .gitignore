@@ -183,3 +183,7 @@ static/
 _dev
 .isort.cfg
 /src/_dev/
+
+the_best_wms_backend/
+the_best_wms_front/
+.cursor/
