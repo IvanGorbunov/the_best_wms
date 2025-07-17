@@ -1,0 +1,828 @@
+{
+  "figma_file": {
+    "name": "WMS Design System - Berry MUI",
+    "version": "1.0.0",
+    "pages": [
+      {
+        "name": "🎨 Design System",
+        "frames": [
+          {
+            "name": "Color Styles",
+            "width": 1920,
+            "height": 1080,
+            "components": {
+              "primary_colors": {
+                "primary_main": "#1976d2",
+                "primary_light": "#42a5f5", 
+                "primary_dark": "#1565c0",
+                "primary_50": "#e3f2fd",
+                "primary_100": "#bbdefb"
+              },
+              "secondary_colors": {
+                "secondary_main": "#f57c00",
+                "secondary_light": "#ffb74d",
+                "secondary_dark": "#ef6c00"
+              },
+              "status_colors": {
+                "success_main": "#388e3c",
+                "success_light": "#66bb6a",
+                "warning_main": "#f9a825", 
+                "warning_light": "#ffcc02",
+                "error_main": "#d32f2f",
+                "error_light": "#ef5350",
+                "info_main": "#0288d1"
+              },
+              "neutral_colors": {
+                "grey_50": "#fafafa",
+                "grey_100": "#f5f5f5",
+                "grey_200": "#eeeeee",
+                "grey_300": "#e0e0e0",
+                "grey_400": "#bdbdbd",
+                "grey_500": "#9e9e9e",
+                "grey_600": "#757575",
+                "grey_700": "#616161",
+                "grey_800": "#424242",
+                "grey_900": "#212121"
+              }
+            }
+          },
+          {
+            "name": "Typography Styles",
+            "width": 1920,
+            "height": 1080,
+            "text_styles": {
+              "h1_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Bold",
+                "font_size": "32px",
+                "line_height": "40px"
+              },
+              "h2_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Bold", 
+                "font_size": "24px",
+                "line_height": "32px"
+              },
+              "h3_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Bold",
+                "font_size": "20px", 
+                "line_height": "28px"
+              },
+              "h4_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Medium",
+                "font_size": "18px",
+                "line_height": "24px"
+              },
+              "body1_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Regular",
+                "font_size": "16px",
+                "line_height": "24px"
+              },
+              "body2_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Regular", 
+                "font_size": "14px",
+                "line_height": "20px"
+              },
+              "caption_desktop": {
+                "font_family": "Inter",
+                "font_weight": "Regular",
+                "font_size": "12px",
+                "line_height": "16px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "📱 Components",
+        "frames": [
+          {
+            "name": "Buttons",
+            "width": 1920,
+            "height": 1080,
+            "components": [
+              {
+                "name": "Primary Button",
+                "type": "button",
+                "variants": ["default", "hover", "pressed", "disabled"],
+                "properties": {
+                  "height": "48px",
+                  "padding": "16px horizontal",
+                  "border_radius": "8px",
+                  "background": "#1976d2",
+                  "text_color": "#ffffff",
+                  "font": "Inter Medium 14px"
+                }
+              },
+              {
+                "name": "Secondary Button", 
+                "type": "button",
+                "variants": ["default", "hover", "pressed", "disabled"],
+                "properties": {
+                  "height": "48px",
+                  "padding": "16px horizontal", 
+                  "border_radius": "8px",
+                  "background": "transparent",
+                  "border": "1px solid #1976d2",
+                  "text_color": "#1976d2",
+                  "font": "Inter Medium 14px"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Input Fields",
+            "width": 1920,
+            "height": 1080,
+            "components": [
+              {
+                "name": "Text Input",
+                "type": "input",
+                "variants": ["default", "focus", "error", "disabled"],
+                "properties": {
+                  "height": "56px",
+                  "padding": "16px",
+                  "border": "1px solid #e0e0e0",
+                  "border_radius": "8px",
+                  "font": "Inter Regular 16px",
+                  "placeholder_color": "#9e9e9e"
+                }
+              },
+              {
+                "name": "Select Dropdown",
+                "type": "select",
+                "variants": ["default", "open", "disabled"],
+                "properties": {
+                  "height": "56px",
+                  "padding": "16px",
+                  "border": "1px solid #e0e0e0",
+                  "border_radius": "8px",
+                  "dropdown_icon": "24x24px"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Cards",
+            "width": 1920,
+            "height": 1080,
+            "components": [
+              {
+                "name": "Base Card",
+                "type": "card",
+                "properties": {
+                  "background": "#ffffff",
+                  "border_radius": "8px",
+                  "shadow": "0 1px 3px rgba(0,0,0,0.12)",
+                  "padding": "24px"
+                }
+              },
+              {
+                "name": "KPI Card",
+                "type": "card",
+                "properties": {
+                  "width": "280px",
+                  "height": "120px",
+                  "background": "#ffffff",
+                  "border_radius": "8px",
+                  "shadow": "0 1px 3px rgba(0,0,0,0.12)",
+                  "padding": "20px"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Navigation",
+            "width": 1920,
+            "height": 1080,
+            "components": [
+              {
+                "name": "Sidebar Navigation",
+                "type": "navigation",
+                "properties": {
+                  "width_expanded": "280px",
+                  "width_collapsed": "72px",
+                  "background": "#ffffff",
+                  "border": "1px solid #eeeeee"
+                }
+              },
+              {
+                "name": "Top Navigation",
+                "type": "navigation",
+                "properties": {
+                  "height": "64px",
+                  "background": "#ffffff",
+                  "shadow": "0 1px 3px rgba(0,0,0,0.12)"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Status Badges",
+            "width": 1920,
+            "height": 1080,
+            "components": [
+              {
+                "name": "Status Badge",
+                "type": "badge",
+                "variants": ["success", "warning", "error", "info"],
+                "properties": {
+                  "height": "24px",
+                  "padding": "4px 8px",
+                  "border_radius": "12px",
+                  "font": "Inter Regular 12px"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "🖥️ Desktop Screens",
+        "frames": [
+          {
+            "name": "Login Page",
+            "width": 1440,
+            "height": 900,
+            "layout": {
+              "type": "centered",
+              "background": "linear-gradient(135deg, #e3f2fd 0%, #fafafa 100%)",
+              "components": [
+                {
+                  "name": "Login Card",
+                  "width": "400px",
+                  "height": "500px",
+                  "position": "center",
+                  "background": "#ffffff",
+                  "border_radius": "8px",
+                  "shadow": "0 3px 6px rgba(0,0,0,0.16)",
+                  "padding": "32px",
+                  "elements": [
+                    {
+                      "type": "logo",
+                      "size": "120px",
+                      "position": "top_center"
+                    },
+                    {
+                      "type": "heading",
+                      "text": "Warehouse Management System",
+                      "style": "h4_desktop",
+                      "color": "#424242",
+                      "position": "below_logo"
+                    },
+                    {
+                      "type": "input",
+                      "label": "Email Address",
+                      "component": "text_input",
+                      "required": true
+                    },
+                    {
+                      "type": "input", 
+                      "label": "Password",
+                      "component": "text_input",
+                      "input_type": "password",
+                      "required": true
+                    },
+                    {
+                      "type": "checkbox",
+                      "label": "Remember me",
+                      "style": "body2_desktop"
+                    },
+                    {
+                      "type": "button",
+                      "text": "SIGN IN",
+                      "component": "primary_button",
+                      "width": "100%"
+                    },
+                    {
+                      "type": "link",
+                      "text": "Forgot password?",
+                      "style": "body2_desktop",
+                      "color": "#1976d2"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Main Dashboard",
+            "width": 1440,
+            "height": 900,
+            "layout": {
+              "type": "app_layout",
+              "components": [
+                {
+                  "name": "Top Navigation",
+                  "component": "top_navigation",
+                  "elements": [
+                    {"type": "logo", "size": "32px"},
+                    {"type": "breadcrumbs", "text": "Dashboard"},
+                    {"type": "search_bar", "width": "300px"},
+                    {"type": "notification_bell", "badge": "8"},
+                    {"type": "user_avatar", "size": "40px"}
+                  ]
+                },
+                {
+                  "name": "Sidebar",
+                  "component": "sidebar_navigation",
+                  "menu_items": [
+                    {"icon": "dashboard", "text": "Dashboard", "active": true},
+                    {"icon": "inventory", "text": "Inventory"},
+                    {"icon": "inbound", "text": "Inbound"},
+                    {"icon": "outbound", "text": "Outbound"},
+                    {"icon": "wave", "text": "Wave Planning"},
+                    {"icon": "truck", "text": "Cross-Docking"},
+                    {"icon": "education", "text": "Training"},
+                    {"icon": "analytics", "text": "Analytics"}
+                  ]
+                },
+                {
+                  "name": "Main Content",
+                  "layout": "grid_12_columns",
+                  "padding": "24px",
+                  "elements": [
+                    {
+                      "name": "Page Header",
+                      "grid": "12",
+                      "elements": [
+                        {"type": "heading", "text": "Dashboard Overview", "style": "h2_desktop"},
+                        {"type": "text", "text": "Last Updated: 10:30 AM", "style": "body2_desktop", "color": "#757575"}
+                      ]
+                    },
+                    {
+                      "name": "KPI Cards Row",
+                      "grid": "12",
+                      "layout": "4_columns",
+                      "elements": [
+                        {
+                          "component": "kpi_card",
+                          "icon": "package",
+                          "value": "1,234",
+                          "label": "Active Orders",
+                          "trend": "+12%",
+                          "trend_color": "#388e3c"
+                        },
+                        {
+                          "component": "kpi_card", 
+                          "icon": "warning",
+                          "value": "23",
+                          "label": "Low Stock Items",
+                          "trend": "-5%",
+                          "trend_color": "#f9a825"
+                        },
+                        {
+                          "component": "kpi_card",
+                          "icon": "users",
+                          "value": "45",
+                          "label": "Active Staff",
+                          "trend": "+2%",
+                          "trend_color": "#388e3c"
+                        },
+                        {
+                          "component": "kpi_card",
+                          "icon": "truck",
+                          "value": "89%",
+                          "label": "On-time Delivery",
+                          "trend": "+3%", 
+                          "trend_color": "#388e3c"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Charts Row",
+                      "grid": "12",
+                      "layout": "6_6_columns",
+                      "elements": [
+                        {
+                          "name": "Order Trends Chart",
+                          "type": "card",
+                          "height": "300px",
+                          "elements": [
+                            {"type": "heading", "text": "Order Trends", "style": "h4_desktop"},
+                            {"type": "line_chart", "height": "250px"}
+                          ]
+                        },
+                        {
+                          "name": "Inventory Status",
+                          "type": "card", 
+                          "height": "300px",
+                          "elements": [
+                            {"type": "heading", "text": "Inventory Status", "style": "h4_desktop"},
+                            {"type": "donut_chart", "height": "250px"}
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Recent Activities",
+                      "grid": "12",
+                      "type": "card",
+                      "height": "200px",
+                      "elements": [
+                        {"type": "heading", "text": "Recent Activities", "style": "h4_desktop"},
+                        {"type": "activity_feed"}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Product List Page",
+            "width": 1440,
+            "height": 900,
+            "layout": {
+              "type": "app_layout",
+              "main_content": {
+                "elements": [
+                  {
+                    "name": "Page Header",
+                    "layout": "space_between",
+                    "elements": [
+                      {"type": "heading", "text": "Products", "style": "h2_desktop"},
+                      {"type": "button", "text": "+ Add Product", "component": "primary_button"}
+                    ]
+                  },
+                  {
+                    "name": "Filters Panel",
+                    "type": "card",
+                    "height": "80px",
+                    "padding": "16px",
+                    "layout": "horizontal",
+                    "elements": [
+                      {"type": "input", "placeholder": "Search products...", "width": "300px"},
+                      {"type": "select", "placeholder": "Category", "width": "150px"},
+                      {"type": "select", "placeholder": "Warehouse", "width": "150px"},
+                      {"type": "select", "placeholder": "Status", "width": "120px"},
+                      {"type": "button", "text": "Reset", "component": "secondary_button"}
+                    ]
+                  },
+                  {
+                    "name": "Data Table",
+                    "type": "card",
+                    "elements": [
+                      {
+                        "type": "table",
+                        "columns": [
+                          {"name": "SKU", "width": "120px", "sortable": true},
+                          {"name": "Name", "width": "200px", "sortable": true},
+                          {"name": "Category", "width": "150px", "sortable": true},
+                          {"name": "Stock", "width": "100px", "sortable": true},
+                          {"name": "Location", "width": "120px", "sortable": false},
+                          {"name": "Actions", "width": "100px", "sortable": false}
+                        ],
+                        "row_height": "56px",
+                        "striped": true,
+                        "hover_effect": true
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pagination",
+                    "layout": "center",
+                    "elements": [
+                      {"type": "pagination", "total_pages": 10, "current_page": 1}
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "Order Kanban Board",
+            "width": 1440,
+            "height": 900,
+            "layout": {
+              "type": "app_layout",
+              "main_content": {
+                "elements": [
+                  {
+                    "name": "Page Header",
+                    "layout": "space_between",
+                    "elements": [
+                      {"type": "heading", "text": "Orders Management", "style": "h2_desktop"},
+                      {"type": "button", "text": "+ Create Order", "component": "primary_button"}
+                    ]
+                  },
+                  {
+                    "name": "Kanban Board",
+                    "layout": "5_columns",
+                    "height": "calc(100vh - 200px)",
+                    "elements": [
+                      {
+                        "name": "New Orders",
+                        "type": "kanban_column",
+                        "header": {"icon": "📝", "text": "New", "count": "12"},
+                        "color": "#757575"
+                      },
+                      {
+                        "name": "Allocated",
+                        "type": "kanban_column", 
+                        "header": {"icon": "🎯", "text": "Allocated", "count": "8"},
+                        "color": "#1976d2"
+                      },
+                      {
+                        "name": "Picking",
+                        "type": "kanban_column",
+                        "header": {"icon": "📦", "text": "Picking", "count": "15"},
+                        "color": "#f57c00"
+                      },
+                      {
+                        "name": "Packing", 
+                        "type": "kanban_column",
+                        "header": {"icon": "📋", "text": "Packing", "count": "6"},
+                        "color": "#f9a825"
+                      },
+                      {
+                        "name": "Shipped",
+                        "type": "kanban_column",
+                        "header": {"icon": "🚚", "text": "Shipped", "count": "23"},
+                        "color": "#388e3c"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "📱 Mobile Screens",
+        "frames": [
+          {
+            "name": "Mobile Login",
+            "width": 375,
+            "height": 812,
+            "layout": {
+              "type": "mobile",
+              "background": "linear-gradient(135deg, #e3f2fd 0%, #fafafa 100%)",
+              "padding": "20px",
+              "elements": [
+                {
+                  "name": "Login Form",
+                  "position": "center",
+                  "background": "#ffffff",
+                  "border_radius": "16px",
+                  "padding": "24px",
+                  "shadow": "0 8px 24px rgba(0,0,0,0.12)",
+                  "elements": [
+                    {"type": "logo", "size": "80px"},
+                    {"type": "heading", "text": "WMS", "style": "h3_desktop"},
+                    {"type": "input", "label": "Email", "height": "56px"},
+                    {"type": "input", "label": "Password", "height": "56px"},
+                    {"type": "button", "text": "SIGN IN", "height": "48px", "width": "100%"}
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mobile Dashboard",
+            "width": 375,
+            "height": 812,
+            "layout": {
+              "type": "mobile_app",
+              "elements": [
+                {
+                  "name": "Mobile Header",
+                  "height": "56px",
+                  "background": "#ffffff",
+                  "elements": [
+                    {"type": "menu_icon", "size": "24px"},
+                    {"type": "heading", "text": "Dashboard", "style": "h5_desktop"},
+                    {"type": "notification_bell", "size": "24px"}
+                  ]
+                },
+                {
+                  "name": "Content",
+                  "padding": "16px",
+                  "elements": [
+                    {
+                      "name": "KPI Grid",
+                      "layout": "2x2_grid",
+                      "gap": "12px",
+                      "elements": [
+                        {"component": "mobile_kpi_card", "icon": "📦", "value": "1,234", "label": "Orders"},
+                        {"component": "mobile_kpi_card", "icon": "⚠️", "value": "23", "label": "Alerts"},
+                        {"component": "mobile_kpi_card", "icon": "👥", "value": "45", "label": "Staff"},
+                        {"component": "mobile_kpi_card", "icon": "📊", "value": "89%", "label": "Efficiency"}
+                      ]
+                    },
+                    {
+                      "name": "Quick Actions",
+                      "type": "card",
+                      "margin_top": "20px",
+                      "elements": [
+                        {"type": "heading", "text": "Quick Actions", "style": "h5_desktop"},
+                        {"type": "action_button", "icon": "📷", "text": "Scan Barcode"},
+                        {"type": "action_button", "icon": "📦", "text": "Check Stock"},
+                        {"type": "action_button", "icon": "📋", "text": "My Tasks"}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Bottom Navigation",
+                  "component": "bottom_tabs",
+                  "tabs": [
+                    {"icon": "📊", "label": "Dashboard", "active": true},
+                    {"icon": "📦", "label": "Stock"},
+                    {"icon": "📋", "label": "Tasks"},
+                    {"icon": "🌊", "label": "Waves"},
+                    {"icon": "👤", "label": "Profile"}
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mobile Scanner",
+            "width": 375,
+            "height": 812,
+            "layout": {
+              "type": "fullscreen",
+              "background": "#000000",
+              "elements": [
+                {
+                  "name": "Scanner Header",
+                  "height": "80px",
+                  "background": "rgba(0,0,0,0.7)",
+                  "elements": [
+                    {"type": "back_button", "color": "#ffffff"},
+                    {"type": "heading", "text": "Scan Barcode", "color": "#ffffff"},
+                    {"type": "flashlight_toggle", "color": "#ffffff"}
+                  ]
+                },
+                {
+                  "name": "Scanner Area",
+                  "position": "center",
+                  "elements": [
+                    {
+                      "type": "scanner_overlay",
+                      "width": "280px",
+                      "height": "200px",
+                      "border": "2px solid #ffffff",
+                      "border_radius": "8px"
+                    },
+                    {
+                      "type": "instructions",
+                      "text": "Position barcode within the frame",
+                      "color": "#ffffff",
+                      "position": "below_scanner"
+                    }
+                  ]
+                },
+                {
+                  "name": "Scanner Footer",
+                  "position": "bottom",
+                  "height": "120px",
+                  "background": "rgba(0,0,0,0.7)",
+                  "elements": [
+                    {"type": "button", "text": "Manual Entry", "component": "secondary_button"}
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mobile Picking Task",
+            "width": 375,
+            "height": 812,
+            "layout": {
+              "type": "mobile_app",
+              "elements": [
+                {
+                  "name": "Task Header",
+                  "height": "56px",
+                  "background": "#ffffff",
+                  "elements": [
+                    {"type": "back_button"},
+                    {"type": "heading", "text": "Picking Task #PT-001"},
+                    {"type": "task_progress", "current": 9, "total": 10}
+                  ]
+                },
+                {
+                  "name": "Progress Bar",
+                  "height": "40px",
+                  "padding": "0 20px",
+                  "elements": [
+                    {"type": "progress_bar", "value": 90, "color": "#1976d2"}
+                  ]
+                },
+                {
+                  "name": "Current Item",
+                  "type": "card",
+                  "margin": "20px",
+                  "padding": "20px",
+                  "elements": [
+                    {"type": "heading", "text": "Current Item", "style": "h5_desktop"},
+                    {"type": "product_info", "sku": "SKU-001234", "name": "Product Name"},
+                    {"type": "location_info", "location": "A-1-05"},
+                    {"type": "quantity_info", "required": 5, "unit": "PCS"}
+                  ]
+                },
+                {
+                  "name": "Scanner Button",
+                  "padding": "20px",
+                  "elements": [
+                    {"type": "button", "text": "📷 Scan Barcode", "component": "primary_button", "height": "56px"}
+                  ]
+                },
+                {
+                  "name": "Quantity Input",
+                  "padding": "0 20px",
+                  "elements": [
+                    {"type": "input", "label": "Picked Quantity", "placeholder": "0 / 5"}
+                  ]
+                },
+                {
+                  "name": "Action Buttons",
+                  "padding": "20px",
+                  "layout": "2_columns",
+                  "gap": "12px",
+                  "elements": [
+                    {"type": "button", "text": "✅ Confirm Pick", "component": "primary_button"},
+                    {"type": "button", "text": "⏭️ Skip", "component": "secondary_button"}
+                  ]
+                },
+                {
+                  "name": "Voice Commands",
+                  "background": "#e3f2fd",
+                  "padding": "12px 20px",
+                  "elements": [
+                    {"type": "voice_indicator", "text": "🎤 Voice Commands Active"},
+                    {"type": "voice_instructions", "text": "Say 'Confirm' or 'Skip'"}
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "component_library": {
+      "buttons": {
+        "primary_button": {
+          "background": "#1976d2",
+          "text_color": "#ffffff",
+          "border_radius": "8px",
+          "font": "Inter Medium 14px",
+          "states": ["default", "hover", "pressed", "disabled"]
+        },
+        "secondary_button": {
+          "background": "transparent",
+          "border": "1px solid #1976d2",
+          "text_color": "#1976d2",
+          "border_radius": "8px",
+          "font": "Inter Medium 14px"
+        }
+      },
+      "cards": {
+        "base_card": {
+          "background": "#ffffff",
+          "border_radius": "8px",
+          "shadow": "0 1px 3px rgba(0,0,0,0.12)",
+          "padding": "24px"
+        },
+        "kpi_card": {
+          "width": "280px",
+          "height": "120px",
+          "background": "#ffffff",
+          "border_radius": "8px",
+          "shadow": "0 1px 3px rgba(0,0,0,0.12)",
+          "padding": "20px"
+        }
+      },
+      "navigation": {
+        "sidebar": {
+          "width_expanded": "280px",
+          "width_collapsed": "72px",
+          "background": "#ffffff",
+          "border_right": "1px solid #eeeeee"
+        },
+        "top_bar": {
+          "height": "64px",
+          "background": "#ffffff",
+          "shadow": "0 1px 3px rgba(0,0,0,0.12)"
+        },
+        "bottom_tabs": {
+          "height": "64px",
+          "background": "#ffffff",
+          "border_top": "1px solid #eeeeee"
+        }
+      }
+    },
+    "responsive_breakpoints": {
+      "mobile": "320px - 767px",
+      "tablet": "768px - 1023px", 
+      "desktop": "1024px+"
+    }
+  }
+} 
