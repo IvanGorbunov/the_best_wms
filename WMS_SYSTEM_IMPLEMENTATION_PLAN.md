@@ -1,3 +1,81 @@
+# 📋 **ОГЛАВЛЕНИЕ**
+
+<!-- START TOC -->
+## **ОСНОВНЫЕ РАЗДЕЛЫ**
+
+### 🎯 **[0. Архитектурные принципы и фундамент](#0-архитектурные-принципы-и-фундамент)**
+- [0.1 Выбор архитектурного подхода](#01-выбор-архитектурного-подхода)
+- [0.2 Технологический стек](#02-технологический-стек)
+- [0.3 Структура Backend-проекта](#03-структура-backend-проекта-целевая)
+
+### 🔧 **[1. План разработки БЭКЕНДА (MVP)](#1-план-разработки-бэкенда-mvp)**
+- [1.1 Инициализация и настройка проекта](#шаг-11-инициализация-и-настройка-проекта)
+- [1.2 Пользователи и авторизация](#шаг-12-пользователи-и-авторизация-приоритет-1)
+- [1.3 Управление запасами](#шаг-13-управление-запасами-приоритет-2)
+- [1.4 Поступление товаров](#шаг-14-поступление-товаров-приоритет-3)
+- [1.5 Реализация и отгрузка](#шаг-15-реализация-и-отгрузка-приоритет-4)
+- [1.6 Модуль обучения персонала](#шаг-16-модуль-обучения-персонала-приоритет-5)
+- [1.7 Волновое планирование](#шаг-17-волновое-планирование-приоритет-6)
+- [1.8 Продвинутые стратегии размещения](#шаг-18-продвинутые-стратегии-размещения-enhancement-for-inventory)
+- [1.9 Кросс-докинг](#шаг-19-кросс-докинг-приоритет-7)
+- [1.10 Real-time аналитика](#шаг-110-real-time-аналитика-приоритет-8)
+- [1.11 AI/ML Integration](#шаг-111-aiml-integration-приоритет-9)
+- [1.12 IoT Integration](#шаг-112-iot-integration-приоритет-10)
+- [1.13 Real-time уведомления](#шаг-113-real-time-уведомления-приоритет-11)
+- [1.14 Отчетность и статистика](#шаг-114-отчетность-и-статистика-reports-module)
+
+### 🎨 **[2. План разработки ФРОНТЕНДА (MVP)](#2-план-разработки-фронтенда-mvp)**
+- [2.1 Инициализация и настройка проекта](#шаг-21-инициализация-и-настройка-проекта)
+- [2.2 Аутентификация и основной Layout](#шаг-22-аутентификация-и-основной-layout-приоритет-1)
+- [2.3 Управление запасами (Frontend)](#шаг-23-управление-запасами-приоритет-2)
+- [2.4 Поступление товаров (Frontend)](#шаг-24-поступление-товаров-приоритет-3)
+- [2.5 Реализация и отгрузка (Frontend)](#шаг-25-реализация-и-отгрузка-приоритет-4)
+- [2.6 Модуль обучения персонала (Frontend)](#шаг-26-модуль-обучения-персонала-приоритет-5)
+- [2.7 Волновое планирование (Frontend)](#шаг-27-волновое-планирование-frontend)
+- [2.8 Кросс-докинг (Frontend)](#шаг-28-кросс-докинг-frontend)
+- [2.9 Real-time Analytics (Frontend)](#шаг-29-real-time-analytics-frontend)
+- [2.10 Mobile-First Approach](#шаг-210-mobile-first-approach)
+
+### 🎨 **[3. План разработки ДИЗАЙНА](#3-план-разработки-дизайна)**
+- [3.1 Design System и UI Kit](#31-design-system-и-ui-kit)
+- [3.2 UX Research и User Journey](#32-ux-research-и-user-journey)
+- [3.3 Adaptive Design](#33-adaptive-design-mobile-first)
+- [3.4 Real-time UI Components](#34-real-time-ui-components)
+
+### 🔄 **[4. SSE-архитектура для Real-time обновлений](#4-sse-архитектура-для-real-time-обновлений)**
+- [4.1 Архитектура SSE](#41-архитектура-sse)
+- [4.2 Реализация SSE в Django](#42-реализация-sse-в-django)
+- [4.3 Frontend интеграция с SSE](#43-frontend-интеграция-с-sse)
+- [4.4 Event-driven архитектура](#44-event-driven-архитектура)
+
+### 🏗️ **[5. Dependency Injection Pattern](#5-dependency-injection-pattern)**
+- [5.1 Принципы применения DI](#51-принципы-применения-di)
+- [5.2 Конфигурация DI контейнера](#52-конфигурация-di-контейнера)
+- [5.3 Интеграции с внешними сервисами](#53-интеграции-с-внешними-сервисами)
+
+### 🐳 **[6. CI/CD и DevOps](#6-cicd-и-devops)**
+- [6.1 Dockerfile](#61-dockerfile)
+- [6.2 Docker Compose](#62-docker-compose)
+- [6.3 GitLab CI/CD](#63-gitlab-cicd)
+
+### 🚀 **[7. Современные API и интеграции](#7-современные-api-и-интеграции)**
+- [7.1 Enhanced API Design](#71-enhanced-api-design)
+- [7.2 API Versioning и Backward Compatibility](#72-api-versioning-и-backward-compatibility)
+
+### 🛡️ **[8. Безопасность и Compliance](#8-безопасность-и-compliance)**
+- [8.1 Enhanced Security](#81-enhanced-security)
+- [8.2 Compliance & Audit](#82-compliance--audit)
+
+### ☁️ **[9. Cloud-Native технологии](#9-cloud-native-технологии)**
+- [9.1 Kubernetes Deployment](#91-kubernetes-deployment)
+- [9.2 Monitoring & Observability](#92-monitoring--observability)
+- [9.3 CI/CD Pipeline Enhancement](#93-cicd-pipeline-enhancement)
+- [9.4 Performance Optimization](#94-performance-optimization)
+
+<!-- END TOC -->
+
+---
+
 # 🏗️ **ДЕТАЛЬНЫЙ ПЛАН РЕАЛИЗАЦИИ WMS-СИСТЕМЫ**
 ## *На базе Django (DRF) + PostgreSQL + React (Berry MUI)*
 
@@ -837,12 +915,46 @@ the_best_wms_backend/
 ## **2. 📝 ПЛАН РАЗРАБОТКИ ФРОНТЕНДА (MVP)**
 
 ### **Шаг 2.1: Инициализация и настройка проекта**
-- **Задача:** Адаптировать шаблон Berry для работы с Django-бэкендом.
+- **Задача:** Адаптировать шаблон Berry для работы с Django-бэкендом и SSE интеграцией.
 - **Действия:**
     1. Настроить `vite.config.mts` для проксирования запросов вида `/api/v1/*` на бэкенд (`http://localhost:8000/api/v1/`).
-    2. Создать файл `.env` для хранения URL бэкенда (`VITE_API_URL=/api/v1`).
+    2. Создать файл `.env` для хранения URL бэкенда (`VITE_API_URL=/api/v1`, `VITE_SSE_URL=/api/v1/sse`).
     3. Настроить `axios`: создать инстанс с `baseURL` из `.env` и `interceptors` для управления JWT.
-    4. Настроить `Zustand`: создать `store` для `user`, `isAuthenticated`, `tokens`.
+    4. Настроить `Zustand`: создать `store` для `user`, `isAuthenticated`, `tokens`, `real-time state`.
+    5. Установить зависимости для PWA: `vite-plugin-pwa`, `workbox-window`.
+    6. Настроить Service Worker для offline capabilities.
+    7. Добавить TypeScript конфигурацию для строгой типизации.
+
+#### 🎯 **Современная архитектура Frontend**
+```typescript
+// src/store/useAppStore.ts - Centralized state management
+interface AppState {
+  user: User | null;
+  isAuthenticated: boolean;
+  tokens: TokenPair | null;
+  realTimeData: {
+    inventory: InventoryUpdate[];
+    orders: OrderUpdate[];
+    notifications: Notification[];
+  };
+  ui: {
+    theme: 'light' | 'dark';
+    sidebarCollapsed: boolean;
+    activeModule: string;
+  };
+}
+
+// src/hooks/useSSE.ts - Server-Sent Events integration
+export const useSSE = (endpoint: string) => {
+  // SSE connection management with automatic reconnection
+};
+
+// src/utils/api.ts - HTTP client with interceptors
+const apiClient = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
+  timeout: 10000,
+});
+```
 
 ### **Шаг 2.2: Аутентификация и основной Layout (Приоритет 1)**
 - **Задача:** Реализовать регистрацию, вход, выход, сброс пароля и защищенные роуты.
@@ -921,21 +1033,1021 @@ the_best_wms_backend/
     - `AlertCenter.tsx`: Центр уведомлений и алертов.
 
 ### **Шаг 2.10: Mobile-First Approach**
-- **Задача:** Обеспечить мобильную совместимость и PWA функциональность.
-- **Технологии:**
-    - Progressive Web App (PWA) для cross-platform compatibility
-    - Offline-first architecture с sync capabilities
-    - Barcode/QR code scanning integration
-    - Voice picking support для hands-free operations
-- **Компоненты:**
-    - `MobileScanner.tsx`: Сканирование штрихкодов
-    - `VoicePicking.tsx`: Голосовой picking
-    - `OfflineSync.tsx`: Синхронизация offline данных
+- **Задача:** Обеспечить мобильную совместимость и PWA функциональность для операций на складе.
+
+#### 📱 **Progressive Web App (PWA) Implementation**
+```typescript
+// vite.config.ts - PWA configuration
+import { VitePWA } from 'vite-plugin-pwa';
+
+export default defineConfig({
+  plugins: [
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
+      manifest: {
+        name: 'WMS System',
+        short_name: 'WMS',
+        description: 'Warehouse Management System',
+        theme_color: '#1976d2',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          }
+        ]
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/api\./,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'api-cache',
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          }
+        ]
+      }
+    })
+  ]
+});
+```
+
+#### 🔧 **Offline-First Architecture**
+- **Service Worker Strategy:**
+  - Critical operations (picking, receiving) работают offline
+  - Data synchronization при восстановлении соединения
+  - Background sync для отложенных операций
+
+#### 📷 **Barcode/QR Scanning Integration**
+```typescript
+// src/components/MobileScanner.tsx
+import { Html5QrcodeScanner } from 'html5-qrcode';
+
+export const MobileScanner: React.FC = () => {
+  const [scanResult, setScanResult] = useState<string>('');
+  
+  const onScanSuccess = (decodedText: string) => {
+    // Handle successful scan
+    setScanResult(decodedText);
+    // Auto-lookup product/location info
+    lookupScannedItem(decodedText);
+  };
+
+  // Integration with picking workflow
+  return (
+    <div className="scanner-container">
+      <Html5QrcodeScanner
+        qrCodeSuccessCallback={onScanSuccess}
+        qrCodeErrorCallback={onScanError}
+      />
+    </div>
+  );
+};
+```
+
+#### 🎤 **Voice Picking Support**
+```typescript
+// src/hooks/useVoiceCommands.ts
+export const useVoiceCommands = () => {
+  const recognition = new (window as any).webkitSpeechRecognition();
+  
+  const commands = {
+    'confirm': () => confirmCurrentAction(),
+    'skip': () => skipCurrentItem(),
+    'quantity [number]': (number: string) => setQuantity(parseInt(number)),
+    'location [code]': (code: string) => navigateToLocation(code)
+  };
+
+  return { startListening, stopListening, isListening };
+};
+```
+
+#### 📲 **Mobile-Optimized Components**
+- **Touch-Friendly Interface:**
+  - Minimum 44px touch targets
+  - Swipe gestures for navigation
+  - Pull-to-refresh functionality
+  - Haptic feedback for confirmations
+
+- **Adaptive UI Patterns:**
+  - Bottom sheet для modal dialogs
+  - Tab bar navigation на mobile
+  - Collapsible lists для большого контента
+  - Floating action buttons для primary actions
+
+#### 🔄 **Offline Data Synchronization**
+```typescript
+// src/utils/offlineSync.ts
+class OfflineSync {
+  private pendingOperations: Operation[] = [];
+  
+  async queueOperation(operation: Operation) {
+    if (navigator.onLine) {
+      return await this.executeOperation(operation);
+    } else {
+      this.pendingOperations.push(operation);
+      await this.saveToIndexedDB(operation);
+    }
+  }
+  
+  async syncPendingOperations() {
+    if (!navigator.onLine) return;
+    
+    for (const operation of this.pendingOperations) {
+      try {
+        await this.executeOperation(operation);
+        this.removePendingOperation(operation);
+      } catch (error) {
+        // Handle sync conflicts
+        this.handleSyncConflict(operation, error);
+      }
+    }
+  }
+}
+```
+
+#### 📊 **Mobile Analytics & Performance**
+- **Performance Monitoring:**
+  - First Contentful Paint < 1.5s
+  - Largest Contentful Paint < 2.5s
+  - Cumulative Layout Shift < 0.1
+  
+- **Mobile-Specific Metrics:**
+  - Touch response time < 100ms
+  - Scroll smoothness (60fps)
+  - Battery usage optimization
 
 ---
-## **3. 🐳 CI/CD и DevOps**
+## **3. 🎨 ПЛАН РАЗРАБОТКИ ДИЗАЙНА**
 
-### 3.1 **Dockerfile**
+### 3.1 **Design System и UI Kit**
+**Задача:** Создать единую дизайн-систему для всех компонентов WMS-интерфейса.
+
+#### 📌 **Компоненты Design System**
+- **Color Palette:**
+  - Primary: #1976d2 (Blue) - основные действия
+  - Secondary: #f57c00 (Orange) - второстепенные действия  
+  - Success: #388e3c (Green) - успешные операции
+  - Warning: #f9a825 (Yellow) - предупреждения
+  - Error: #d32f2f (Red) - ошибки
+  - Neutral: #424242, #757575, #e0e0e0 - текст и фоны
+
+- **Typography Scale:**
+  - Headers: Inter/Roboto Bold (H1: 32px, H2: 24px, H3: 20px, H4: 18px)
+  - Body: Inter/Roboto Regular (16px/14px)
+  - Captions: 12px
+  - Code: Fira Code Mono
+
+- **Spacing System:**
+  - Base unit: 8px
+  - Spacing scale: 4px, 8px, 16px, 24px, 32px, 48px, 64px
+
+#### 🎨 **Component Library**
+- **Data Display:**
+  - Tables with sorting, filtering, pagination
+  - Cards for inventory items
+  - Charts (Line, Bar, Pie, Real-time)
+  - Dashboards with metrics widgets
+  
+- **Navigation:**
+  - Sidebar navigation with collapsible sections
+  - Breadcrumbs
+  - Tab navigation
+  - Stepper for multi-step processes
+
+- **Forms & Inputs:**
+  - Text inputs with validation states
+  - Select dropdowns with search
+  - Date/time pickers
+  - File upload with drag & drop
+  - Checkbox/radio groups
+
+- **Feedback & Status:**
+  - Toast notifications (success/error/warning)
+  - Loading states (spinners, skeletons)
+  - Progress indicators
+  - Status badges
+
+### 3.2 **UX Research и User Journey**
+**Задача:** Исследовать пользовательские потребности и создать оптимальные пользовательские пути.
+
+#### 👥 **User Personas**
+- **Warehouse Manager:** Контроль KPI, планирование, отчеты
+- **Inventory Specialist:** Управление остатками, размещение товаров
+- **Picking Operator:** Сборка заказов, сканирование
+- **Receiving Clerk:** Приемка товаров, проверка качества
+- **System Administrator:** Настройка системы, управление пользователями
+
+#### 🗺️ **User Journey Maps**
+- **Order Fulfillment Journey:**
+  1. Order Creation → 2. Allocation → 3. Picking → 4. Packing → 5. Shipping
+- **Inventory Management Journey:**
+  1. Receiving → 2. Put-away → 3. Stock monitoring → 4. Replenishment
+- **Returns Processing Journey:**
+  1. Return Authorization → 2. Inspection → 3. Disposition → 4. Restocking
+
+#### 📱 **Mobile-First Considerations**
+- Touch-friendly interface (минимум 44px для кнопок)
+- Thumb-zone navigation
+- Offline capabilities для критических операций
+- Voice input для hands-free операций
+- Barcode/QR scanning integration
+
+### 3.3 **Adaptive Design (Mobile-First)**
+**Задача:** Обеспечить отличный UX на всех устройствах и размерах экранов.
+
+#### 📱 **Breakpoints**
+```css
+/* Mobile First */
+@media (min-width: 320px) { /* Mobile portrait */ }
+@media (min-width: 480px) { /* Mobile landscape */ }
+@media (min-width: 768px) { /* Tablet portrait */ }
+@media (min-width: 1024px) { /* Tablet landscape / Small desktop */ }
+@media (min-width: 1200px) { /* Desktop */ }
+@media (min-width: 1440px) { /* Large desktop */ }
+```
+
+#### 🔄 **Responsive Patterns**
+- **Navigation:** Collapsible sidebar → Bottom tab bar на mobile
+- **Tables:** Horizontal scroll → Card view на mobile
+- **Forms:** Single column → Multi-column на desktop
+- **Dashboards:** Stacked widgets → Grid layout на desktop
+
+#### 🎛️ **Progressive Web App (PWA)**
+- Service Workers для offline functionality
+- App Shell архитектура
+- Push notifications для real-time updates
+- Add to Home Screen capability
+
+### 3.4 **Real-time UI Components**
+**Задача:** Создать компоненты для отображения real-time данных и статусов.
+
+#### 📊 **Real-time Data Visualization**
+- **Live Charts:** С SSE-обновлениями для KPI дашбордов
+- **Status Indicators:** Real-time статусы заказов, оборудования, персонала
+- **Progress Bars:** Динамические индикаторы выполнения задач
+- **Activity Feeds:** Живая лента событий склада
+
+#### 🔔 **Notification System**
+- **Toast Notifications:** Автоматически исчезающие уведомления
+- **Alert Banners:** Критические уведомления в header
+- **Notification Center:** Центральное место для всех уведомлений
+- **Real-time Counters:** Счетчики непрочитанных уведомлений
+
+#### 🎨 **Animation & Micro-interactions**
+- **Loading States:** Skeleton screens во время загрузки
+- **State Transitions:** Плавные переходы между состояниями
+- **Hover Effects:** Интерактивные эффекты для кнопок и карточек
+- **Success Animations:** Визуальная обратная связь при успешных действиях
+
+---
+## **4. 🔄 SSE-АРХИТЕКТУРА ДЛЯ REAL-TIME ОБНОВЛЕНИЙ**
+
+### 4.1 **Архитектура SSE**
+**Задача:** Реализовать эффективную архитектуру для real-time обновлений через Server-Sent Events.
+
+#### 📡 **SSE vs WebSockets Выбор**
+```yaml
+Выбор SSE для WMS когда:
+  - Односторонняя коммуникация (server → client)
+  - Простота реализации критична
+  - Нужна автоматическая реконнекция
+  - HTTP/2 multiplexing достаточно
+  
+Используем для:
+  - Inventory updates (остатки товаров)
+  - Order status changes (статусы заказов)  
+  - Task assignments (назначение задач)
+  - System notifications (системные уведомления)
+  - KPI dashboard updates (обновления дашбордов)
+```
+
+#### 🏗️ **SSE Event Architecture**
+```python
+# Структура SSE события
+{
+    "event": "inventory_update",  # Тип события
+    "data": {                     # Данные события
+        "product_id": "SKU123",
+        "location": "A-1-01", 
+        "quantity": 150,
+        "timestamp": "2024-01-15T10:30:00Z"
+    },
+    "id": "evt_001",             # ID для resume
+    "retry": 3000                # Время переподключения
+}
+```
+
+### 4.2 **Реализация SSE в Django**
+**Задача:** Создать Django backend для SSE с использованием Django Channels и ASGI.
+
+#### 🔧 **Django SSE Consumer**
+```python
+# src/utils/sse/consumers.py
+from channels.generic.http import AsyncHttpConsumer
+from channels.db import database_sync_to_async
+import json
+import asyncio
+
+class WMSSSEConsumer(AsyncHttpConsumer):
+    async def handle(self, body):
+        # Добавляем пользователя в группу для его warehouse
+        warehouse_id = self.scope["user"].profile.warehouse_id
+        await self.channel_layer.group_add(
+            f"warehouse_{warehouse_id}", 
+            self.channel_name
+        )
+        
+        # Устанавливаем SSE headers
+        await self.send_headers([
+            (b"Content-Type", b"text/event-stream"),
+            (b"Cache-Control", b"no-cache"),
+            (b"Connection", b"keep-alive"),
+            (b"Access-Control-Allow-Origin", b"*"),
+        ])
+        
+        # Отправляем initial heartbeat
+        await self.send_sse_event("connected", {"status": "connected"})
+        
+        # Держим соединение открытым
+        try:
+            while True:
+                await asyncio.sleep(30)  # Heartbeat каждые 30 сек
+                await self.send_sse_event("heartbeat", {"timestamp": timezone.now()})
+        except Exception:
+            await self.disconnect()
+
+    async def send_sse_event(self, event_type: str, data: dict):
+        """Отправка SSE события клиенту"""
+        message = f"event: {event_type}\ndata: {json.dumps(data)}\n\n"
+        await self.send_body(message.encode(), more_body=True)
+
+    # Event handlers для различных типов событий
+    async def inventory_update(self, event):
+        await self.send_sse_event("inventory_update", event["data"])
+    
+    async def order_status_change(self, event):
+        await self.send_sse_event("order_status", event["data"])
+    
+    async def task_assignment(self, event):
+        await self.send_sse_event("task_assigned", event["data"])
+```
+
+#### 📨 **Event Broadcasting System**
+```python
+# src/utils/sse/broadcaster.py
+from channels.layers import get_channel_layer
+from asgiref.sync import async_to_sync
+from typing import Dict, Any
+
+class SSEBroadcaster:
+    def __init__(self):
+        self.channel_layer = get_channel_layer()
+    
+    def broadcast_to_warehouse(self, warehouse_id: int, event_type: str, data: Dict[Any, Any]):
+        """Отправка события всем пользователям склада"""
+        async_to_sync(self.channel_layer.group_send)(
+            f"warehouse_{warehouse_id}",
+            {
+                "type": event_type.replace("-", "_"),  # inventory-update -> inventory_update
+                "data": data
+            }
+        )
+    
+    def broadcast_to_user(self, user_id: int, event_type: str, data: Dict[Any, Any]):
+        """Отправка события конкретному пользователю"""
+        async_to_sync(self.channel_layer.group_send)(
+            f"user_{user_id}",
+            {
+                "type": event_type.replace("-", "_"),
+                "data": data
+            }
+        )
+
+# Использование в сервисах
+broadcaster = SSEBroadcaster()
+
+# В InventoryService при обновлении остатков
+def update_stock_level(self, product_id: str, location: str, new_quantity: int):
+    # ... бизнес-логика обновления ...
+    
+    # Отправляем real-time обновление
+    broadcaster.broadcast_to_warehouse(
+        warehouse_id=self.warehouse_id,
+        event_type="inventory-update",
+        data={
+            "product_id": product_id,
+            "location": location,
+            "quantity": new_quantity,
+            "timestamp": timezone.now().isoformat()
+        }
+    )
+```
+
+### 4.3 **Frontend интеграция с SSE**
+**Задача:** Создать React компоненты для получения и обработки SSE событий.
+
+#### ⚛️ **React SSE Hook**
+```typescript
+// src/hooks/useSSE.ts
+import { useEffect, useRef, useCallback } from 'react';
+import { useAuth } from './useAuth';
+
+interface SSEHookOptions {
+  url: string;
+  onEvent?: (eventType: string, data: any) => void;
+  onError?: (error: Event) => void;
+  onOpen?: () => void;
+}
+
+export const useSSE = ({ url, onEvent, onError, onOpen }: SSEHookOptions) => {
+  const eventSourceRef = useRef<EventSource | null>(null);
+  const { token } = useAuth();
+
+  const connect = useCallback(() => {
+    if (eventSourceRef.current) {
+      eventSourceRef.current.close();
+    }
+
+    const eventSource = new EventSource(`${url}?token=${token}`, {
+      withCredentials: true
+    });
+
+    eventSource.onopen = () => {
+      console.log('SSE connection opened');
+      onOpen?.();
+    };
+
+    eventSource.onerror = (error) => {
+      console.error('SSE error:', error);
+      onError?.(error);
+    };
+
+    // Слушаем различные типы событий
+    eventSource.addEventListener('inventory-update', (event) => {
+      const data = JSON.parse(event.data);
+      onEvent?.('inventory-update', data);
+    });
+
+    eventSource.addEventListener('order-status', (event) => {
+      const data = JSON.parse(event.data);
+      onEvent?.('order-status', data);
+    });
+
+    eventSource.addEventListener('task-assigned', (event) => {
+      const data = JSON.parse(event.data);
+      onEvent?.('task-assigned', data);
+    });
+
+    eventSourceRef.current = eventSource;
+  }, [url, token, onEvent, onError, onOpen]);
+
+  useEffect(() => {
+    connect();
+    
+    return () => {
+      if (eventSourceRef.current) {
+        eventSourceRef.current.close();
+      }
+    };
+  }, [connect]);
+
+  return {
+    reconnect: connect,
+    disconnect: () => eventSourceRef.current?.close()
+  };
+};
+```
+
+#### 📊 **Real-time Dashboard Component**
+```typescript
+// src/components/RealTimeDashboard.tsx
+import React, { useState, useCallback } from 'react';
+import { useSSE } from '../hooks/useSSE';
+import { InventoryWidget } from './widgets/InventoryWidget';
+import { OrderStatusWidget } from './widgets/OrderStatusWidget';
+
+export const RealTimeDashboard: React.FC = () => {
+  const [inventoryData, setInventoryData] = useState({});
+  const [orderStatuses, setOrderStatuses] = useState([]);
+  const [connectionStatus, setConnectionStatus] = useState('connecting');
+
+  const handleSSEEvent = useCallback((eventType: string, data: any) => {
+    switch (eventType) {
+      case 'inventory-update':
+        setInventoryData(prev => ({
+          ...prev,
+          [data.product_id]: data
+        }));
+        break;
+      
+      case 'order-status':
+        setOrderStatuses(prev => 
+          prev.map(order => 
+            order.id === data.order_id 
+              ? { ...order, status: data.status }
+              : order
+          )
+        );
+        break;
+      
+      case 'heartbeat':
+        setConnectionStatus('connected');
+        break;
+    }
+  }, []);
+
+  useSSE({
+    url: '/api/v1/sse/warehouse-events/',
+    onEvent: handleSSEEvent,
+    onOpen: () => setConnectionStatus('connected'),
+    onError: () => setConnectionStatus('error')
+  });
+
+  return (
+    <div className="dashboard-grid">
+      <div className="connection-status">
+        Status: {connectionStatus}
+      </div>
+      
+      <InventoryWidget data={inventoryData} />
+      <OrderStatusWidget orders={orderStatuses} />
+    </div>
+  );
+};
+```
+
+### 4.4 **Event-driven архитектура**
+**Задача:** Создать event-driven систему для реагирования на изменения в системе.
+
+#### 🎯 **Domain Events**
+```python
+# src/utils/events/domain_events.py
+from dataclasses import dataclass
+from datetime import datetime
+from typing import Any, Dict
+import uuid
+
+@dataclass
+class DomainEvent:
+    event_id: str
+    event_type: str
+    aggregate_id: str
+    aggregate_type: str
+    data: Dict[str, Any]
+    timestamp: datetime
+    version: int = 1
+
+    def __post_init__(self):
+        if not self.event_id:
+            self.event_id = str(uuid.uuid4())
+
+# Конкретные domain events
+@dataclass  
+class InventoryUpdatedEvent(DomainEvent):
+    def __init__(self, product_id: str, location: str, old_quantity: int, new_quantity: int):
+        super().__init__(
+            event_id="",
+            event_type="inventory.updated",
+            aggregate_id=product_id,
+            aggregate_type="Product",
+            data={
+                "product_id": product_id,
+                "location": location,
+                "old_quantity": old_quantity,
+                "new_quantity": new_quantity
+            },
+            timestamp=datetime.now()
+        )
+
+@dataclass
+class OrderStatusChangedEvent(DomainEvent):
+    def __init__(self, order_id: str, old_status: str, new_status: str, user_id: str):
+        super().__init__(
+            event_id="",
+            event_type="order.status_changed", 
+            aggregate_id=order_id,
+            aggregate_type="Order",
+            data={
+                "order_id": order_id,
+                "old_status": old_status,
+                "new_status": new_status,
+                "changed_by": user_id
+            },
+            timestamp=datetime.now()
+        )
+```
+
+#### 📮 **Event Publisher/Subscriber**
+```python
+# src/utils/events/event_bus.py
+from typing import List, Callable, Dict
+from .domain_events import DomainEvent
+from ..sse.broadcaster import SSEBroadcaster
+
+class EventBus:
+    def __init__(self):
+        self._handlers: Dict[str, List[Callable]] = {}
+        self.sse_broadcaster = SSEBroadcaster()
+    
+    def subscribe(self, event_type: str, handler: Callable[[DomainEvent], None]):
+        """Подписка на события"""
+        if event_type not in self._handlers:
+            self._handlers[event_type] = []
+        self._handlers[event_type].append(handler)
+    
+    def publish(self, event: DomainEvent):
+        """Публикация события"""
+        # Сохраняем событие в event store
+        self._save_event(event)
+        
+        # Вызываем handlers
+        if event.event_type in self._handlers:
+            for handler in self._handlers[event.event_type]:
+                try:
+                    handler(event)
+                except Exception as e:
+                    logger.error(f"Error handling event {event.event_id}: {e}")
+        
+        # Отправляем через SSE
+        self._broadcast_sse_event(event)
+    
+    def _broadcast_sse_event(self, event: DomainEvent):
+        """Преобразование domain event в SSE event"""
+        if event.event_type == "inventory.updated":
+            self.sse_broadcaster.broadcast_to_warehouse(
+                warehouse_id=1,  # TODO: получать из context
+                event_type="inventory-update",
+                data=event.data
+            )
+        elif event.event_type == "order.status_changed":
+            self.sse_broadcaster.broadcast_to_warehouse(
+                warehouse_id=1,
+                event_type="order-status", 
+                data=event.data
+            )
+
+# Глобальная instance
+event_bus = EventBus()
+
+# Настройка handlers
+def handle_inventory_updated(event: DomainEvent):
+    """Handler для обновления inventory в аналитике"""
+    # Логика обновления analytics
+    pass
+
+def handle_order_status_changed(event: DomainEvent):
+    """Handler для уведомлений об изменении статуса заказа"""
+    # Логика отправки уведомлений
+    pass
+
+# Регистрируем handlers
+event_bus.subscribe("inventory.updated", handle_inventory_updated)
+event_bus.subscribe("order.status_changed", handle_order_status_changed)
+```
+
+---
+## **5. 🏗️ DEPENDENCY INJECTION PATTERN**
+
+### 5.1 **Принципы применения DI**
+**Задача:** Определить правильные случаи использования DI в Django/DRF проекте.
+
+#### ✅ **Где применять DI (Рекомендуется)**
+```python
+# 1. Внешние интеграции и API
+class ExternalAPIService:
+    def __init__(self, http_client: HttpClient, config: APIConfig):
+        self.http_client = http_client
+        self.config = config
+
+# 2. Кеширование и Redis операции  
+class CacheService:
+    def __init__(self, redis_client: Redis, serializer: Serializer):
+        self.redis_client = redis_client
+        self.serializer = serializer
+
+# 3. IoT и Device интеграции
+class IoTDeviceService:
+    def __init__(self, mqtt_client: MQTTClient, device_registry: DeviceRegistry):
+        self.mqtt_client = mqtt_client
+        self.device_registry = device_registry
+
+# 4. Email/SMS сервисы
+class NotificationService:
+    def __init__(self, email_backend: EmailBackend, sms_backend: SMSBackend):
+        self.email_backend = email_backend  
+        self.sms_backend = sms_backend
+
+# 5. File storage и обработка документов
+class DocumentProcessingService:
+    def __init__(self, storage: FileStorage, pdf_processor: PDFProcessor):
+        self.storage = storage
+        self.pdf_processor = pdf_processor
+```
+
+#### ❌ **Где НЕ применять DI (Стандартный DRF)**
+```python
+# Стандартные DRF паттерны работают отлично
+class ProductViewSet(ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['category', 'warehouse']
+
+# Простые сервисы без внешних зависимостей  
+class InventoryService:
+    def calculate_stock_level(self, product_id: str) -> int:
+        return StockItem.objects.filter(product_id=product_id).aggregate(
+            total=Sum('quantity')
+        )['total'] or 0
+```
+
+### 5.2 **Конфигурация DI контейнера**
+**Задача:** Настроить dependency-injector для управления сложными зависимостями.
+
+#### 🏗️ **Container Configuration**
+```python
+# src/containers.py
+from dependency_injector import containers, providers
+from dependency_injector.wiring import Provide, inject
+import redis
+import requests
+from pika import BlockingConnection, ConnectionParameters
+
+class ApplicationContainer(containers.DeclarativeContainer):
+    
+    # Configuration
+    config = providers.Configuration()
+    
+    # Infrastructure providers
+    redis_client = providers.Singleton(
+        redis.Redis,
+        host=config.redis.host,
+        port=config.redis.port,
+        db=config.redis.db,
+        password=config.redis.password,
+    )
+    
+    http_client = providers.Singleton(
+        requests.Session
+    )
+    
+    rabbitmq_connection = providers.Singleton(
+        BlockingConnection,
+        ConnectionParameters(
+            host=config.rabbitmq.host,
+            port=config.rabbitmq.port,
+            credentials=providers.Object(
+                pika.PlainCredentials(
+                    config.rabbitmq.username,
+                    config.rabbitmq.password
+                )
+            )
+        )
+    )
+    
+    # Application services  
+    cache_service = providers.Factory(
+        CacheService,
+        redis_client=redis_client
+    )
+    
+    external_api_service = providers.Factory(
+        ExternalAPIService,
+        http_client=http_client,
+        base_url=config.external_api.base_url,
+        api_key=config.external_api.key
+    )
+    
+    notification_service = providers.Factory(
+        NotificationService,
+        redis_client=redis_client,
+        rabbitmq_connection=rabbitmq_connection
+    )
+    
+    iot_service = providers.Factory(
+        IoTDeviceService,
+        redis_client=redis_client,
+        mqtt_config=config.mqtt
+    )
+
+# Инициализация в settings.py
+container = ApplicationContainer()
+container.config.from_dict({
+    'redis': {
+        'host': os.getenv('REDIS_HOST', 'localhost'),
+        'port': int(os.getenv('REDIS_PORT', 6379)),
+        'db': int(os.getenv('REDIS_DB', 0)),
+        'password': os.getenv('REDIS_PASSWORD')
+    },
+    'external_api': {
+        'base_url': os.getenv('EXTERNAL_API_URL'),
+        'key': os.getenv('EXTERNAL_API_KEY')
+    },
+    'rabbitmq': {
+        'host': os.getenv('RABBITMQ_HOST', 'localhost'),
+        'port': int(os.getenv('RABBITMQ_PORT', 5672)),
+        'username': os.getenv('RABBITMQ_USER', 'guest'),
+        'password': os.getenv('RABBITMQ_PASS', 'guest')
+    },
+    'mqtt': {
+        'host': os.getenv('MQTT_HOST', 'localhost'),
+        'port': int(os.getenv('MQTT_PORT', 1883))
+    }
+})
+```
+
+### 5.3 **Интеграции с внешними сервисами**
+**Задача:** Реализовать интеграции с внешними системами используя DI.
+
+#### 🔗 **External API Integration**
+```python
+# src/apps/integrations/services.py
+from typing import Dict, Any, Optional
+import requests
+from dataclasses import dataclass
+
+@dataclass
+class APIResponse:
+    success: bool
+    data: Optional[Dict[str, Any]] = None
+    error: Optional[str] = None
+    status_code: Optional[int] = None
+
+class ExternalAPIService:
+    """Сервис для интеграции с внешними API (ERP, TMS, etc.)"""
+    
+    def __init__(self, http_client: requests.Session, base_url: str, api_key: str):
+        self.http_client = http_client
+        self.base_url = base_url.rstrip('/')
+        self.api_key = api_key
+        
+        # Настройка headers для всех запросов
+        self.http_client.headers.update({
+            'Authorization': f'Bearer {self.api_key}',
+            'Content-Type': 'application/json',
+            'User-Agent': 'WMS-System/1.0'
+        })
+    
+    def sync_product_catalog(self, last_sync: datetime) -> APIResponse:
+        """Синхронизация каталога товаров с ERP"""
+        try:
+            response = self.http_client.get(
+                f'{self.base_url}/api/products',
+                params={'modified_since': last_sync.isoformat()}
+            )
+            response.raise_for_status()
+            
+            return APIResponse(
+                success=True,
+                data=response.json(),
+                status_code=response.status_code
+            )
+        except requests.RequestException as e:
+            return APIResponse(
+                success=False,
+                error=str(e),
+                status_code=getattr(e.response, 'status_code', None)
+            )
+    
+    def send_shipment_notification(self, shipment_data: Dict[str, Any]) -> APIResponse:
+        """Отправка уведомления об отгрузке в TMS"""
+        try:
+            response = self.http_client.post(
+                f'{self.base_url}/api/shipments',
+                json=shipment_data
+            )
+            response.raise_for_status()
+            
+            return APIResponse(
+                success=True,
+                data=response.json(),
+                status_code=response.status_code
+            )
+        except requests.RequestException as e:
+            return APIResponse(
+                success=False,
+                error=str(e),
+                status_code=getattr(e.response, 'status_code', None)
+            )
+
+# src/apps/integrations/views.py
+from dependency_injector.wiring import inject, Provide
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from .containers import ApplicationContainer
+
+class ProductSyncView(APIView):
+    @inject
+    def post(
+        self, 
+        request,
+        external_api_service: ExternalAPIService = Provide[ApplicationContainer.external_api_service]
+    ):
+        last_sync = request.data.get('last_sync')
+        result = external_api_service.sync_product_catalog(last_sync)
+        
+        if result.success:
+            # Обработка полученных данных
+            self._process_product_data(result.data)
+            return Response({'status': 'success', 'products_updated': len(result.data)})
+        else:
+            return Response({'status': 'error', 'message': result.error}, status=400)
+    
+    def _process_product_data(self, products_data):
+        # Логика обработки и сохранения данных продуктов
+        pass
+```
+
+#### 📦 **Cache Service с Redis**
+```python
+# src/utils/cache/services.py
+import json
+import pickle
+from typing import Any, Optional, Union
+from datetime import timedelta
+import redis
+
+class CacheService:
+    """Сервис для работы с Redis кешем"""
+    
+    def __init__(self, redis_client: redis.Redis):
+        self.redis_client = redis_client
+    
+    def get(self, key: str, default: Any = None) -> Any:
+        """Получение значения из кеша"""
+        try:
+            value = self.redis_client.get(key)
+            if value is None:
+                return default
+            return pickle.loads(value)
+        except (redis.RedisError, pickle.UnpicklingError):
+            return default
+    
+    def set(self, key: str, value: Any, ttl: Optional[Union[int, timedelta]] = None) -> bool:
+        """Сохранение значения в кеш"""
+        try:
+            serialized_value = pickle.dumps(value)
+            if ttl:
+                if isinstance(ttl, timedelta):
+                    ttl = int(ttl.total_seconds())
+                return self.redis_client.setex(key, ttl, serialized_value)
+            else:
+                return self.redis_client.set(key, serialized_value)
+        except (redis.RedisError, pickle.PicklingError):
+            return False
+    
+    def delete(self, key: str) -> bool:
+        """Удаление значения из кеша"""
+        try:
+            return bool(self.redis_client.delete(key))
+        except redis.RedisError:
+            return False
+    
+    def get_inventory_summary(self, warehouse_id: int) -> Optional[Dict[str, Any]]:
+        """Получение сводки по складу из кеша"""
+        cache_key = f"inventory_summary:warehouse:{warehouse_id}"
+        return self.get(cache_key)
+    
+    def set_inventory_summary(self, warehouse_id: int, summary: Dict[str, Any], ttl_minutes: int = 15):
+        """Кеширование сводки по складу"""
+        cache_key = f"inventory_summary:warehouse:{warehouse_id}"
+        return self.set(cache_key, summary, timedelta(minutes=ttl_minutes))
+
+# Использование в сервисах
+from dependency_injector.wiring import inject, Provide
+
+class InventoryService:
+    @inject
+    def __init__(
+        self,
+        cache_service: CacheService = Provide[ApplicationContainer.cache_service]
+    ):
+        self.cache_service = cache_service
+    
+    def get_warehouse_summary(self, warehouse_id: int) -> Dict[str, Any]:
+        # Сначала проверяем кеш
+        cached_summary = self.cache_service.get_inventory_summary(warehouse_id)
+        if cached_summary:
+            return cached_summary
+        
+        # Если нет в кеше, вычисляем и кешируем
+        summary = self._calculate_warehouse_summary(warehouse_id)
+        self.cache_service.set_inventory_summary(warehouse_id, summary)
+        
+        return summary
+```
+
+---
+## **6. 🐳 CI/CD и DevOps**
+
+### 6.1 **Dockerfile**
 - **Задача:** Создать `Dockerfile` для production-сборки Django-приложения.
 - **Структура:**
     - Использовать multi-stage build.
@@ -960,42 +2072,190 @@ the_best_wms_backend/
     - **`deploy` stage:** Остается без изменений, если деплой идет через Helm в Kubernetes.
 
 ---
-## **4. 🚀 СОВРЕМЕННЫЕ API И ИНТЕГРАЦИИ**
+## **7. 🚀 СОВРЕМЕННЫЕ API И ИНТЕГРАЦИИ**
 
-### 4.1 **Enhanced API Design**
-- **Server-Sent Events (SSE):** Real-time updates для списков и дашбордов
-    - `/api/v1/stream/inventory/` - Real-time обновления остатков
-    - `/api/v1/stream/orders/` - Статус заказов в реальном времени
-    - `/api/v1/stream/alerts/` - Критические уведомления
+### 7.1 **Enhanced API Design**
+**Задача:** Создать современную API архитектуру с поддержкой real-time обновлений и высокой производительности.
 
-- **Bulk Operations API:** Высокопроизводительные массовые операции
-    - `POST /api/v1/bulk/inventory/update/` - Массовое обновление остатков
-    - `POST /api/v1/bulk/orders/create/` - Создание множественных заказов
-    - `POST /api/v1/bulk/products/import/` - Импорт товаров
-
-- **HATEOAS Implementation:** Self-documenting APIs
-    ```json
-    {
-        "id": 123,
-        "status": "allocated",
-        "_links": {
-            "self": "/api/v1/orders/123/",
-            "pick": "/api/v1/orders/123/pick/",
-            "cancel": "/api/v1/orders/123/cancel/"
-        }
+#### 📡 **Server-Sent Events (SSE) Endpoints**
+```python
+# SSE Endpoints для real-time обновлений
+SSE_ENDPOINTS = {
+    # Warehouse-level updates
+    '/api/v1/sse/warehouse/{warehouse_id}/': {
+        'events': ['inventory-update', 'order-status', 'wave-progress'],
+        'auth': 'warehouse-access'
+    },
+    
+    # User-specific updates  
+    '/api/v1/sse/user/{user_id}/': {
+        'events': ['task-assigned', 'notification', 'alert'],
+        'auth': 'user-specific'
+    },
+    
+    # Global system events
+    '/api/v1/sse/system/': {
+        'events': ['system-alert', 'maintenance', 'broadcast'],
+        'auth': 'admin-only'
     }
-    ```
+}
 
-### 4.2 **API Versioning и Backward Compatibility**
+# Пример SSE события
+{
+    "event": "inventory-update",
+    "data": {
+        "product_id": "SKU123",
+        "location": "A-1-01",
+        "old_quantity": 100,
+        "new_quantity": 95,
+        "transaction_type": "pick",
+        "order_id": "ORD-456",
+        "timestamp": "2024-01-15T10:30:00Z"
+    },
+    "id": "evt_001",
+    "retry": 3000
+}
+```
+
+#### ⚡ **High-Performance Bulk Operations API**
+```python
+# Bulk API для массовых операций
+BULK_ENDPOINTS = {
+    'POST /api/v1/bulk/inventory/update/': {
+        'description': 'Массовое обновление остатков',
+        'max_items': 10000,
+        'rate_limit': '100/minute',
+        'response_format': 'batch_result'
+    },
+    
+    'POST /api/v1/bulk/orders/create/': {
+        'description': 'Создание множественных заказов',
+        'max_items': 1000,
+        'rate_limit': '50/minute',
+        'async': True
+    },
+    
+    'POST /api/v1/bulk/products/import/': {
+        'description': 'Импорт товаров',
+        'max_items': 50000,
+        'file_formats': ['CSV', 'Excel', 'JSON'],
+        'async': True
+    }
+}
+
+# Пример bulk запроса
+{
+    "operations": [
+        {
+            "action": "update",
+            "product_id": "SKU123",
+            "location": "A-1-01",
+            "quantity": 100
+        },
+        {
+            "action": "move",
+            "product_id": "SKU124", 
+            "from_location": "B-2-01",
+            "to_location": "A-1-02",
+            "quantity": 50
+        }
+    ],
+    "options": {
+        "validate_only": false,
+        "stop_on_error": true,
+        "return_details": true
+    }
+}
+```
+
+#### 🔗 **HATEOAS Implementation для Self-Documenting APIs**
+```python
+# Пример HATEOAS response
+{
+    "id": 123,
+    "order_number": "ORD-2024-001",
+    "status": "allocated",
+    "customer": "ACME Corp",
+    "items_count": 5,
+    "created_at": "2024-01-15T09:00:00Z",
+    
+    # Доступные действия в зависимости от статуса и прав
+    "_links": {
+        "self": {
+            "href": "/api/v1/orders/123/",
+            "method": "GET"
+        },
+        "pick": {
+            "href": "/api/v1/orders/123/pick/",
+            "method": "POST",
+            "description": "Start picking process"
+        },
+        "cancel": {
+            "href": "/api/v1/orders/123/cancel/",
+            "method": "POST", 
+            "description": "Cancel order",
+            "confirmation_required": true
+        },
+        "priority": {
+            "href": "/api/v1/orders/123/priority/",
+            "method": "PATCH",
+            "description": "Change order priority"
+        }
+    },
+    
+    # Метаданные для клиента
+    "_meta": {
+        "permissions": ["read", "update", "cancel"],
+        "next_valid_statuses": ["picked", "cancelled"],
+        "estimated_completion": "2024-01-15T14:00:00Z"
+    }
+}
+```
+
+#### 🎯 **GraphQL-подобные возможности через JSON API**
+```python
+# Flexible field selection
+GET /api/v1/orders/?fields=id,status,customer&include=items,shipping
+
+# Response:
+{
+    "data": [
+        {
+            "id": 123,
+            "status": "allocated", 
+            "customer": "ACME Corp",
+            "items": [...],
+            "shipping": {...}
+        }
+    ],
+    "included": {
+        "items": [...],
+        "shipping": [...]
+    }
+}
+```
+
+#### 📊 **Advanced Filtering и Search**
+```python
+# Complex filtering examples
+GET /api/v1/inventory/?filter[product.category]=electronics&filter[quantity__gte]=100
+GET /api/v1/orders/?filter[status__in]=allocated,picked&filter[created_at__range]=2024-01-01,2024-01-31
+GET /api/v1/products/?search=apple&filter[warehouse]=1&sort=-created_at&page=1&page_size=20
+
+# Full-text search с highlight
+GET /api/v1/search/?q=damaged+goods&entities=orders,products&highlight=true
+```
+
+### 7.2 **API Versioning и Backward Compatibility**
 - **URL Versioning:** `/api/v1/`, `/api/v2/`
 - **Header Versioning:** `Accept: application/vnd.wms.v1+json`
 - **Deprecation Warnings:** Градуальный переход между версиями
 - **Feature Flags:** A/B testing новых API features
 
 ---
-## **5. 🛡️ БЕЗОПАСНОСТЬ И COMPLIANCE**
+## **8. 🛡️ БЕЗОПАСНОСТЬ И COMPLIANCE**
 
-### 5.1 **Enhanced Security**
+### 8.1 **Enhanced Security**
 - **Authentication & Authorization:**
     - OAuth 2.0 + PKCE для secure authentication
     - JWT с refresh tokens и short-lived access tokens
@@ -1033,7 +2293,7 @@ the_best_wms_backend/
     - GDPR compliance tools
     - Audit logging для всех операций
 
-### 5.2 **Compliance & Audit**
+### 8.2 **Compliance & Audit**
 - **Audit Trail:**
     ```python
     class AuditLog(models.Model):
@@ -1053,9 +2313,9 @@ the_best_wms_backend/
     - SOX compliance для financial reporting
 
 ---
-## **6. ☁️ CLOUD-NATIVE ТЕХНОЛОГИИ**
+## **9. ☁️ CLOUD-NATIVE ТЕХНОЛОГИИ**
 
-### 6.1 **Kubernetes Deployment**
+### 9.1 **Kubernetes Deployment**
 - **Infrastructure as Code:**
     ```yaml
     # k8s/backend-deployment.yaml
@@ -1082,7 +2342,7 @@ the_best_wms_backend/
     - Vertical Pod Autoscaler (VPA)
     - Cluster Autoscaler для node scaling
 
-### 6.2 **Monitoring & Observability**
+### 9.2 **Monitoring & Observability**
 - **Metrics Collection:**
     - Prometheus для сбора метрик
     - Grafana для визуализации
@@ -1106,7 +2366,7 @@ the_best_wms_backend/
         })
     ```
 
-### 6.3 **CI/CD Pipeline Enhancement**
+### 9.3 **CI/CD Pipeline Enhancement**
 - **Modern CI/CD Features:**
     ```yaml
     # .github/workflows/deploy.yml
@@ -1152,7 +2412,7 @@ the_best_wms_backend/
     - Feature flags для gradual feature enabling
     - Automated rollback при detection проблем
 
-### 6.4 **Performance Optimization**
+### 9.4 **Performance Optimization**
 - **Database Optimization:**
     - Connection pooling с PgBouncer
     - Read replicas для scale read operations
